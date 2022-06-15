@@ -15,8 +15,10 @@ const Sheet = ({ selected, locationInfo, setModal }: IProps) => {
   return (
     <div className='rick__sheet'>
       <div className='rick__sheet-inner'>
-        <button onClick={() => setModal(false)}>close</button>
-        <div className='rick__sheet-inner_character'>
+        <div className='rick__sheet-inner-button'>
+          <button onClick={() => setModal(false)}>close</button>
+        </div>
+        <div className='rick__sheet_character'>
           <div className='rick__sheet-image'>
             <img src={selected.img} alt='Rick and Morty character' />
           </div>

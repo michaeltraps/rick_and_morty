@@ -13,12 +13,26 @@
 .rick__sheet-inner {
   position: realtive;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
 
-  width: 50vh;
+  width: 60vh;
   height: 40vh;
   background-color: black;
+}
+
+.rick__sheet-inner-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.rick__sheet_character{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .rick__sheet-image {
