@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import './header.css'
+import './header.css';
 
 const Header = () => {
   return (
@@ -12,8 +12,7 @@ const Header = () => {
         <h2>Portal Tech</h2>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
-
+export default Header;

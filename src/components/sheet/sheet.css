@@ -7,9 +7,29 @@
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
+}
+
+.rick__sheet-inner {
+  position: realtive;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 50vh;
+  height: 40vh;
+  background-color: black;
 }
 
 .rick__sheet-image {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.rick__sheet-image img {
+  height: 15rem;
+  border-radius: 120px;
 }

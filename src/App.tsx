@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Header } from './components';
 import { Characters } from './containers';
 
@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <Characters />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
