@@ -1,0 +1,32 @@
+.rick__card {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 10px
+}
+
+.rick__card-img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.rick__card-img img {
+  height: 8rem;
+  border-radius: 65px;
+}
+
+.rick__card-stats {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height:100%;
+  width:100%;
+  
+}

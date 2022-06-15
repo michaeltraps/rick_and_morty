@@ -1,0 +1,28 @@
+.rick__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rick__header-title {
+  font-family: var(--title-font);
+}
+
+.rick__header-title h1 {
+  font-size: 75px;
+  color: var(--font-color-title);
+  text-shadow: -1px 1px 0 #456b14,
+  1px 1px 0 #456b14,
+  1px -1px 0 #456b14,
+  -1px -1px 0 #456b14;
+}
+
+.rick__header-subtitle {
+  font-family: var(--font-family);
+}
+
+.rick__header-subtitle h2 {
+  font-size: 45px;
+  color: var(--font-color)
+}

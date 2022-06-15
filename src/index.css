@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --font-family: 'Source Code Pro';
+  --title-font: 'Creepster';
+
+  --color-bg: #24325FFF;
+  --font-color: #fff;
+  --font-color-title: #b7e4f9ff;
+  --border-color: #69c8ecff;
+
+}
