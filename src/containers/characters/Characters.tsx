@@ -3,11 +3,19 @@ import { Card, Sheet } from '../../components';
 
 import './characters.css';
 
+export interface LocationInfo {
+  id: number;
+  name: string;
+  type: string;
+  dimension: string;
+  residents: {}[];
+}
+
 const Characters = () => {
 
   const [ characters, setCharacters ] = useState<any[]>([])
   const [ selected, setSelected ] = useState({name: '', species:'', status:'', location:'', img:''})
-  const [ locationInfo, setLocation ] = useState({});
+  const [ locationInfo, setLocation ] = useState({id: 0, name:'', type:'', dimension:'', residents:[]});
   const [ modal, setModal ] = useState(false);
 
   useEffect(() => {
@@ -33,7 +41,9 @@ const Characters = () => {
     .catch((err) => console.log('err', err));
   }
   
+  // creates character list to display on UI
   const charactersList = [];
+
   for (let i: number = 0; i < characters.length; i++) {
     charactersList.push(
     <Card 
@@ -45,17 +55,24 @@ const Characters = () => {
     location={characters[i].location.name}
     getLocation={getLocation}
     setSelected={setSelected}
+    setModal={setModal}
     />)
   }
 
   console.log('location info: ', locationInfo)
+  console.log('selected: ', selected)
+  
   return (
     <div className='rick__characters'>
       {charactersList}
+      {modal === true ?
       <Sheet
       selected={selected}
-      // locationInfo={locationInfo}
+      locationInfo={locationInfo}
+      setModal={setModal}
       />
+        : ''
+      }
     </div>
   );
 };

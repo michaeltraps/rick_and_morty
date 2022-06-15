@@ -10,6 +10,7 @@ interface Props {
   location: string;
   getLocation: (name: string) => void;
   setSelected: (character: object) => void;
+  setModal: (bool: boolean) => void;
 }
 
 export interface Selected {
@@ -20,7 +21,7 @@ export interface Selected {
   location: string;
 }
 
-const Card: FC<Props> = ({ name, status, species, img, location, getLocation, setSelected }) => {
+const Card: FC<Props> = ({ name, status, species, img, location, getLocation, setSelected, setModal }) => {
   return (
     <div className='rick__card'>
       <div className='rick__card-img'>
@@ -36,6 +37,7 @@ const Card: FC<Props> = ({ name, status, species, img, location, getLocation, se
         <button onClick={() => {
           getLocation(location)
           setSelected({name: name, status: status, species: species, img: img, location:location})
+          setModal(true)
         }}>More Info</button>
       </div>
     </div>
