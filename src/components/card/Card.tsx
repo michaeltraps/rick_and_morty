@@ -23,7 +23,14 @@ export interface Selected {
 
 const Card: FC<Props> = ({ name, status, species, img, location, getLocation, setSelected, setModal }) => {
   return (
-    <div className='rick__card'>
+    <div
+      className='rick__card'
+      onClick={() => {
+        getLocation(location);
+        setSelected({ name: name, status: status, species: species, img: img, location: location });
+        setModal(true);
+      }}
+    >
       <div className=' rick__card-img'>
         <img src={img} alt='Rick and Morty character' />
       </div>
@@ -31,10 +38,10 @@ const Card: FC<Props> = ({ name, status, species, img, location, getLocation, se
         <h4>{name} </h4>
         <h4>Status: {status} </h4>
         <h4>Species: {species} </h4>
-        <h4>Location: {location}</h4>
+        {/* <h4>Location: {location}</h4> */}
       </div>
       <div className='rick__card-more'>
-        <button
+        {/* <button
           onClick={() => {
             getLocation(location);
             setSelected({ name: name, status: status, species: species, img: img, location: location });
@@ -42,7 +49,7 @@ const Card: FC<Props> = ({ name, status, species, img, location, getLocation, se
           }}
         >
           More Info
-        </button>
+        </button> */}
       </div>
     </div>
   );

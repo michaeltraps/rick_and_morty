@@ -6,8 +6,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform .3s;
+  border-radius: 20px;
+}
+
+.rick__card:hover {
+  background-color: var(--card-bg-hover);
+  transform: scale(1.05);
 }
 
 .rick__card-img {
@@ -15,6 +23,7 @@
   height: 100%;
   width: 100%;
   justify-content: center;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 

@@ -5,8 +5,11 @@
   --font-family: 'Source Code Pro';
   --title-font: 'Creepster';
 
-  --color-bg: #24325fff;
+  --color-bg: #69c8ecff;
+  --title-color: #526e2dff;
   --font-color: #fff;
   --font-color-title: #b7e4f9ff;
-  --border-color: #69c8ecff;
+  --card-bg: #24325fff;
+  --card-bg-hover: rgb(61, 83, 153);
+  --sheet-color: #161e39;
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .rick__header-title {
@@ -12,7 +13,10 @@
 .rick__header-title h1 {
   font-size: 75px;
   color: var(--font-color-title);
-  text-shadow: -1px 1px 0 #456b14, 1px 1px 0 #456b14, 1px -1px 0 #456b14, -1px -1px 0 #456b14;
+  text-shadow: -1px 1px 0 #456b14,
+  1px 1px 0 #456b14,
+  1px -1px 0 #456b14,
+  -1px -1px 0 #456b14;
 }
 
 .rick__header-subtitle {
@@ -21,5 +25,5 @@
 
 .rick__header-subtitle h2 {
   font-size: 45px;
-  color: var(--font-color);
+  color: var(--font-color)
 }

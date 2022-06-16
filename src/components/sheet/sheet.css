@@ -8,28 +8,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .rick__sheet-inner {
   position: realtive;
   display: flex;
   flex-direction: column;
-
-  width: 60vh;
+  border-radius: 20px;;
+  width: 70vh;
   height: 40vh;
-  background-color: black;
+  background-color: var(--sheet-color);
 }
 
 .rick__sheet-inner-button {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  margin: 20px 30px 0px 0px;
+}
+
+.rick__sheet-inner-button button {
+  font-size: 20px;
+  color: white;
+  background: none;
+  border: none;
 }
 
 .rick__sheet_character{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -46,4 +55,35 @@
 .rick__sheet-image img {
   height: 15rem;
   border-radius: 120px;
+}
+
+.rick__sheet-info h1 {
+  color: var(--font-color-title);
+  font-size: 40px;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
