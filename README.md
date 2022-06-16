@@ -5,15 +5,12 @@
 <img align="center" width="500px" src="https://static.wikia.nocookie.net/logopedia/images/f/f6/Rick_and_Morty_logo.svg/revision/latest?cb=20210611111743" alt='rick and morty in front of portal with logo'/>
 
 <br/>
-
+<br/>
+<br/>
 
 Rick and Morty Portal utilizes the publicly-available Rick and Morty API to gather twenty random characters from the Rick and Morty universe. Character cards can be selected for additional location information.
 
-
 <img width="500px" src='./src/assets/demo.gif' alt='Rick and Morty portal demo'/>
-
-
-<br/>
 
 ### PROJECT SETUP
 
