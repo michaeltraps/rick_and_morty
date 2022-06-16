@@ -10,7 +10,3 @@ body {
   font-family: var(--font-family);
   color: var(--font-color);
 }
-
-.rick__app {
-  margin: 0px 20px 30px 20px;
-}

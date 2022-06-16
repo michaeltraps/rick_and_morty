@@ -91,3 +91,14 @@
             transform: scale(1);
   }
 }
+
+@media screen and (max-width: 820px) {
+  .rick__sheet-inner{
+    width: 30vh;
+    height: 60vh;
+  }
+  .rick__sheet_character {
+    flex-direction: column;
+    text-align: center;
+  }
+}

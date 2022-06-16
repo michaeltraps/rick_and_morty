@@ -1,13 +1,14 @@
 .rick__header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 10px;
 }
 
 .rick__header-title {
   font-family: var(--title-font);
+  text-align: center;
 }
 
 .rick__header-title h1 {
@@ -21,6 +22,7 @@
 
 .rick__header-subtitle {
   font-family: var(--font-family);
+  text-align: center;
 }
 
 .rick__header-subtitle h2 {
