@@ -9,7 +9,7 @@ Rick and Morty Portal utilizes the publicly-available Rick and Morty API to gath
 
 <br/>
 
-<img width="500px" src='https://s8.gifyu.com/images/RAM-Portal.gif' alt='Rick and Morty portal demo'/>
+<img width="500px" src='https://iili.io/hkKwq7.gif' alt='Rick and Morty portal demo'/>
 
 <br/>
 
