@@ -6,7 +6,7 @@
 }
 
 body {
-  background: var(--color-bg);
+  background-image: url(./assets/bg-stars.jpeg);
   font-family: var(--font-family);
   color: var(--font-color);
 }

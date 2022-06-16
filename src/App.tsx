@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from './components';
+import { Header, Footer } from './components';
 import { Characters } from './containers';
 
 import './App.css';
@@ -9,6 +9,7 @@ const App = () => {
     <div className='rick__app'>
       <Header />
       <Characters />
+      <Footer />
     </div>
   );
 };

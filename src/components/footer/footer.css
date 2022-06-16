@@ -1,0 +1,17 @@
+.rick__footer {
+  margin: 20px 0 0 0 ;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rick__footer p {
+  margin-top: 140px;
+}
+
+.rick__footer img {
+  position: relative;
+  bottom: 0px;
+  height: 200px;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Sheet } from '../../components';
 import { GiPortal } from 'react-icons/gi';
+import portal from '../../assets/portal.gif';
 
 import './characters.css';
 
@@ -78,19 +79,22 @@ const Characters = () => {
     );
   }
 
-  // console.log('location info: ', locationInfo);
-  // console.log('selected: ', selected);
-
   return (
     <div className='rick__characters_container'>
       {/*if modal is open, X close button has tab priority*/}
       <div onKeyPress={() => getCharacters()} onClick={() => getCharacters()} className='rick__characters_container-portal' tabIndex={modal === true ? -1 : 0}>
-        <GiPortal size={70} />
+        {/* <GiPortal size={70} /> */}
+        <img src={portal} alt='swirling portal' />
+      </div>
+      <div className='rick__header-subtitle'>
+        <h3>Click the portal to grab characters from across the multiverse</h3>
       </div>
       <div className='rick__characters'>
         {charactersList}
         {modal === true ? <Sheet selected={selected} locationInfo={locationInfo} setModal={setModal} /> : ''}
       </div>
+      {/*If the generated list of characters is any less than the required 20, an error message will appear on screen */}
+      <div className='rick___error'>{charactersList.length < 20 ? <h3>The portal has malfunctioned!</h3> : ''}</div>
     </div>
   );
 };
