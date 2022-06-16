@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Sheet } from '../../components';
-import { GiPortal } from 'react-icons/gi';
 import portal from '../../assets/portal.gif';
 
 import './characters.css';
@@ -93,8 +92,11 @@ const Characters = () => {
         {charactersList}
         {modal === true ? <Sheet selected={selected} locationInfo={locationInfo} setModal={setModal} /> : ''}
       </div>
-      {/*If the generated list of characters is any less than the required 20, an error message will appear on screen */}
-      <div className='rick___error'>{charactersList.length < 20 ? <h3>The portal has malfunctioned!</h3> : ''}</div>
+      {/*If the generated list of characters is any less than the required 20, an dynamic error message will appear on screen */}
+      <div className='rick___error-less'>
+        {charactersList.length < 20 && charactersList.length !== 0 ? <h3>Malfuntion in transporting some characters.</h3> : ''}
+      </div>
+      <div className='rick___error-none'>{charactersList.length === 0 ? <h3>Portal malfunction. No characters transported!</h3> : ''}</div>
     </div>
   );
 };

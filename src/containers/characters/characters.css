@@ -28,8 +28,14 @@
   height: 200px;
 }
 
-.rick___error {
+.rick___error-less {
   color: red;
+  margin-top: 15px;
+}
+
+.rick___error-none {
+  color: red;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1100px) {
