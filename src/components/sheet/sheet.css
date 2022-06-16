@@ -54,6 +54,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .rick__sheet-image img {
@@ -100,5 +101,17 @@
   .rick__sheet_character {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .rick__sheet-info h1 {
+    font-size: 25px;
+  }
+  .rick__sheet-info h3 {
+    font-size: 15px;
+  }
+  .rick__sheet-image img {
+    height: 10rem;
   }
 }
