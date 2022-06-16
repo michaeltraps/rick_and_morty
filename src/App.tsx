@@ -6,7 +6,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className='rick__app'>
+    <div data-testid='App-1' className='rick__app'>
       <Header />
       <Characters />
       <Footer />

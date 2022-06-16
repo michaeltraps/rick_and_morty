@@ -79,7 +79,7 @@ const Characters = () => {
   }
 
   return (
-    <div className='rick__characters_container'>
+    <div data-testid='Characters-1' className='rick__characters_container'>
       {/*if modal is open, X close button has tab priority*/}
       <div onKeyPress={() => getCharacters()} onClick={() => getCharacters()} className='rick__characters_container-portal' tabIndex={modal === true ? -1 : 0}>
         {/* <GiPortal size={70} /> */}

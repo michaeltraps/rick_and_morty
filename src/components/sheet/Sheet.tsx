@@ -15,7 +15,7 @@ interface IProps {
 
 const Sheet = ({ selected, locationInfo, setModal }: IProps) => {
   return (
-    <div className='rick__sheet'>
+    <div data-testid='Sheet-1' className='rick__sheet'>
       <div className='rick__sheet-inner scale-up-center'>
         <div className='rick__sheet-inner-button'>
           <button tabIndex={0} onClick={() => setModal(false)}>

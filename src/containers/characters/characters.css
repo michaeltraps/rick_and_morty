@@ -54,6 +54,9 @@
   .rick__characters {
     grid-template-columns: repeat(2, 1fr);
   }
+  .rick__characters_container-portal img{
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -61,6 +64,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 .rick__header-subtitle {
   margin-bottom: 20px;
