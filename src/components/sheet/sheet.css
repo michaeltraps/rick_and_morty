@@ -34,6 +34,7 @@
   color: white;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .rick__sheet-inner-button button:hover {
