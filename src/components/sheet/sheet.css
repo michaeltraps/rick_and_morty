@@ -19,6 +19,7 @@
   width: 70vh;
   height: 40vh;
   background-color: var(--sheet-color);
+  overflow: auto;
 }
 
 .rick__sheet-inner-button {
@@ -104,7 +105,7 @@
   }
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 925px) {
   .rick__sheet-info h1 {
     font-size: 25px;
   }

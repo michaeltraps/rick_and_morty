@@ -5,7 +5,7 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div className='rick__footer'>
+    <div data-testid='Footer-1' className='rick__footer'>
       <p>© 2022 Michael Trapani</p>
       <img src={footer} alt='Rick holding Morty and pushing towards screen' />
       <p>Built using the Rick and Morty API</p>
