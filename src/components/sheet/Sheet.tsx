@@ -6,6 +6,7 @@ import { LocationInfo } from '../../containers/characters/Characters';
 
 import './sheet.css';
 
+// interface Props for Sheet properties
 interface IProps {
   selected: Selected;
   locationInfo: LocationInfo;
@@ -28,7 +29,8 @@ const Sheet = ({ selected, locationInfo, setModal }: IProps) => {
             <h3>Status: {selected.status}</h3>
             <h3>Species: {selected.species}</h3>
             <br />
-
+            <hr />
+            <br />
             <h2>
               <GiWorld />
               {`  ${locationInfo.name}`}

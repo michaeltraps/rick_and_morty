@@ -35,6 +35,10 @@
   border: none;
 }
 
+.rick__sheet-inner-button button:hover {
+  color: #fb6467ff;
+}
+
 .rick__sheet_character{
   display: flex;
   flex-direction: row;
