@@ -9,7 +9,7 @@ Rick and Morty Portal utilizes the publicly-available Rick and Morty API to gath
 
 <br/>
 
-<img width="500px" src='https://lh3.googleusercontent.com/Lp-ZeSadb8R691M4I9EEPeay5vQDQFWUgTTwG6RtE1PWc0494f54R1i6Np8yrijjUQC04Xzp5e6ooS4DoavJZ9OhWYE0R8fg-ie5NZPjjEhMKNiaSz-g5JajNUToHzzDcQY3Lt-vDKTkx_bp8Y0OkWRoO5dZsOupGBLI0jS4TEDvfWd_JMz63DS2H6keMEg7VDSUmpIUdxVw_Avy3wZpknoXoDFJsCPYInk6xKk6SNw80Yt_ZzH2re3-DxPQBsaHShBgRpN_krPBChWnZtMEJeR_219_LEOsW2-TJJ34PYTjhq9fWY4jdfNyArPYRpPOyxvnZI4qnDQJMvMYBUIXe6BQvSAPWMoaZqp96g_gme1hPzrXwIqimR8LJ8xJVNarAZY_0fC0YzmkAmDbGXR4Si83UJyoptNiLC0hwYkc9Vpn-2W4ZEL4U5bQWc4Y8lSFyCmQxZqscQ7_0VbgHNvIH1EUO1gSX46Ga83M2y0gZouMF1_EbmZp9NRxOi1QTwnY6xt5Qk0g39j58RbjdKin-7EEOKLK3bXpmWQ9lBmMMMdRP7f7436sVMJJcQKTXKQi-jLBnQssQKBV-6hCe3JFPezFd2X_o_QuYwJzzXThA4Tjcf2cjASiknEm87qgw1kUkd5UlaiyYgk2M2ETn96S8cKloNxXsjK8T9OVjLDtQCW6uarda3onyCK-YvgUzW2ce9Owbchvc5UtnJh9jVQsQmIH3rt9-jrz0l72PKzJLZTNvYYzLgJroYk1LLNBux6PdB39oPLwCw83YJatDzlDUKOLhrMsGUYJ=w597-h411-no?authuser=1' alt='Rick and Morty portal demo'/>
+<img width="500px" src='https://s8.gifyu.com/images/RAM-Portal.gif' alt='Rick and Morty portal demo'/>
 
 <br/>
 
