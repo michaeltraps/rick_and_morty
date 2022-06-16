@@ -20,18 +20,18 @@
   justify-content: center;
   align-items: center;
   transition: transform .3s;
-  color: #21b128;
+  color: #135f17;
   margin-bottom: 5px;
 }
 
 .rick__characters_container-portal:hover {
   transform: scale(1.15);
-  color: #135f17;
+  color: #21b128;
 }
 
 .rick__characters_container-portal:focus {
   transform: scale(1.15);
-  color: #135f17;
+  color: #21b128;
 }
 
 @media screen and (max-width: 1100px) {
