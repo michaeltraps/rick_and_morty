@@ -42,7 +42,7 @@ const Card = ({ name, status, species, img, location, getLocation, setSelected, 
         <img src={img} alt='Rick and Morty character' />
       </div>
       <div className='rick__card-stats'>
-        <h4>{name}</h4>
+        <h5>{name}</h5>
         <h4>Status: {status} </h4>
         <h4>Species: {species} </h4>
       </div>
