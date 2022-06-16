@@ -25,6 +25,7 @@ export interface Selected {
 const Card = ({ name, status, species, img, location, getLocation, setSelected, setModal, modal }: Props) => {
   return (
     <div
+      data-testid='Card-1'
       tabIndex={modal === true ? -1 : 0}
       className='rick__card'
       onClick={() => {
