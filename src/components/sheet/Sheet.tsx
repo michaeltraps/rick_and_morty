@@ -18,7 +18,9 @@ const Sheet = ({ selected, locationInfo, setModal }: IProps) => {
     <div className='rick__sheet'>
       <div className='rick__sheet-inner scale-up-center'>
         <div className='rick__sheet-inner-button'>
-          <button onClick={() => setModal(false)}>X</button>
+          <button tabIndex={0} onClick={() => setModal(false)}>
+            X
+          </button>
         </div>
         <div className='rick__sheet_character'>
           <div className='rick__sheet-image'>

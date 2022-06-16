@@ -18,6 +18,11 @@
   transform: scale(1.05);
 }
 
+.rick__card:focus {
+  background-color: var(--card-bg-hover);
+  transform: scale(1.05);
+}
+
 .rick__card-img {
   display: flex;
   height: 100%;

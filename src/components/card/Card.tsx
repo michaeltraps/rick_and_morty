@@ -8,6 +8,7 @@ interface Props {
   species: string;
   img: string;
   location: string;
+  modal: boolean;
   getLocation: (name: string) => void;
   setSelected: (character: object) => void;
   setModal: (bool: boolean) => void;
@@ -21,11 +22,17 @@ export interface Selected {
   location: string;
 }
 
-const Card = ({ name, status, species, img, location, getLocation, setSelected, setModal }: Props) => {
+const Card = ({ name, status, species, img, location, getLocation, setSelected, setModal, modal }: Props) => {
   return (
     <div
+      tabIndex={modal === true ? -1 : 0}
       className='rick__card'
       onClick={() => {
+        getLocation(location);
+        setSelected({ name: name, status: status, species: species, img: img, location: location });
+        setModal(true);
+      }}
+      onKeyPress={() => {
         getLocation(location);
         setSelected({ name: name, status: status, species: species, img: img, location: location });
         setModal(true);
