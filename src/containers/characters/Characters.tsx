@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Sheet } from '../../components';
+import { GiPortal } from 'react-icons/gi';
 
 import './characters.css';
 
@@ -20,21 +21,35 @@ const Characters = () => {
   const [locationInfo, setLocation] = useState({ id: 0, name: '', type: '', dimension: '', residents: [] });
   const [modal, setModal] = useState(false);
 
+  // run getCharacters function on page load
   useEffect(() => {
     getCharacters();
   }, []);
 
   // request 20 random characters from Rick and Morty API
   const getCharacters = () => {
-    const random: number[] = Array.from({ length: 20 }, () => Math.floor(Math.random() * 826));
-    const url: string = `https://rickandmortyapi.com/api/character/${random}`;
+    // create random array of 20 integers between 1 and 826 to populate view
+    const randomArray: number[] = [];
+    function random() {
+      while (randomArray.length < 20) {
+        let randomNumber = Math.ceil(Math.random() * 826);
+        if (!randomArray.includes(randomNumber)) {
+          randomArray.push(randomNumber);
+        }
+      }
+    }
+    // call randomizer function
+    random();
+
+    // fetch random array of characters from Rick and Morty API
+    const url: string = `https://rickandmortyapi.com/api/character/${randomArray}`;
     fetch(url)
       .then((data) => data.json())
       .then((data) => setCharacters(data))
       .catch((err) => console.log('err', err));
   };
 
-  // get the location of a selected character profile
+  // fetch location informationm from selected character profile
   const getLocation = (name: string) => {
     const url: string = `https://rickandmortyapi.com/api/location/?name=${name}`;
     fetch(url)
@@ -62,13 +77,18 @@ const Characters = () => {
     );
   }
 
-  console.log('location info: ', locationInfo);
-  console.log('selected: ', selected);
+  // console.log('location info: ', locationInfo);
+  // console.log('selected: ', selected);
 
   return (
-    <div className='rick__characters'>
-      {charactersList}
-      {modal === true ? <Sheet selected={selected} locationInfo={locationInfo} setModal={setModal} /> : ''}
+    <div className='rick__characters_container'>
+      <div className='rick__characters_container-portal'>
+        <GiPortal size={70} onClick={() => getCharacters()} />
+      </div>
+      <div className='rick__characters'>
+        {charactersList}
+        {modal === true ? <Sheet selected={selected} locationInfo={locationInfo} setModal={setModal} /> : ''}
+      </div>
     </div>
   );
 };

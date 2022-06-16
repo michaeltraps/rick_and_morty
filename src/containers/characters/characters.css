@@ -5,3 +5,24 @@
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 0.5rem;
 }
+
+.rick__characters_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rick__characters_container-portal {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: transform .3s;
+  color: #21b128;
+  margin-bottom: 5px;
+}
+
+.rick__characters_container-portal:hover {
+  transform: scale(1.15);
+  color: #135f17;
+}
