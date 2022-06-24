@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function useLocation () {
+export default function useLocation () {
   const [loading, setLoading] = useState(false);
 
   // define getLocation
@@ -20,12 +20,11 @@ function useLocation () {
     }
   };
 
-  // return [loading, getLocation];
+  return [loading, getLocation];
 
-  return Object.assign([loading, getLocation], {
-    isLoading: loading,
-    request: getLocation,
-  });
+  // object return option (instead of above array)
+  // return Object.assign([loading, getLocation], {
+  //   isLoading: loading,
+  //   request: getLocation,
+  // });
 }
-
-// const [loading, getLocation] = useLocation();
