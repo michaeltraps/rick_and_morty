@@ -53,7 +53,7 @@ Ricky and Morty Portal was built using the following:
 
 ## QUESTIONS
 
-** -- What architectural decisions did you make and why? Elaborate on strengths and weaknesses.**
+**What architectural decisions did you make and why? Elaborate on strengths and weaknesses.**
 
 The assignment guidelines required using React with either JavaScript or TypeScript. I opted to build the app using TypeScript. This allowed me to build out the codebase in a more structured and foolproof way, as TypeScript continued to keep track of static typing and make the code more readable for review. Of course, TypeScript can take longer to write since you must also be mindful of your code. The benefits outweighed the negatives here.
 
@@ -65,20 +65,20 @@ The portal character results were built using a responsive layout, with addition
 
 I kept accessibility in mind as well, and have included alt text for all images rendered. In addition, the portal image button (to fetch new characters) and each displayed character card are tabable via the 'Tab' key and selectable via the 'Enter' key.
 
-** -- How did you handle error cases? Eg: botched response, no response, etc.**
+**How did you handle error cases? Eg: botched response, no response, etc.**
 
 I included .catch responses in my fetch requests that would log errors to the console within the Chrome browser when building out the code.
 
 Additionally, I created user-facing onscreen errors if less than 20 characters are fetched from the API for any reason. The error message reads differently if no characters are fetched from the API. This was helpful, since during my project development time, the API went down briefly and I was initially unsure if it was my code or the API.
 
-** -- How did you test the app?**
+**How did you test the app?**
 
 Given the shorter timeframe, I was only able to write some simple component render tests for the header, footer, and characters container. During the project phase, I peppered my code with console.logs to determine how data was being received from the API.
 
-** -- What third party libraries/ external code snippets did you use, if any?**
+**What third party libraries/ external code snippets did you use, if any?**
 
 I opted not to use any third-party libraries for this project, though I had briefly considered using Material-UI given the short time frame. However, I thought it was more important to showcase my vanilla CSS skills. As mentioned previously, I also did not utilize the Rick and Morty API JavaScript client.
 
-** -- If you had more time, what would you have done differently?**
+**If you had more time, what would you have done differently?**
 
 With additional time, I would have built out more testing, and spent more time refactoring my code for easier future readability. It would have also been fun to create additional portals that would fetch either location and/or episode information, rather than just the characters. With even more time, full API searches would also be fun to add. More bug testing would also be needed to ensure a more seamless application flow.
