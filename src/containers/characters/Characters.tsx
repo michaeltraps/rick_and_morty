@@ -49,6 +49,8 @@ const Characters = () => {
       .catch((err) => console.log('err', err));
   };
 
+  
+
   // fetch location informationm from selected character profile
   const getLocation = (name: string) => {
     const url: string = `https://rickandmortyapi.com/api/location/?name=${name}`;
