@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function useLocation () {
+function useLocation() {
   const [loading, setLoading] = useState(false);
 
   // define getLocation
@@ -10,8 +10,8 @@ export default function useLocation () {
     setLoading(true);
 
     try {
-      const data = await fetch(url)
-      
+      const data = await fetch(url);
+
       return data.json();
     } catch (err) {
       console.log('err', err);
@@ -22,9 +22,12 @@ export default function useLocation () {
 
   return [loading, getLocation];
 
+  // ** method to return an object instead of an array ** //
   // object return option (instead of above array)
   // return Object.assign([loading, getLocation], {
   //   isLoading: loading,
   //   request: getLocation,
   // });
 }
+
+export default useLocation;
