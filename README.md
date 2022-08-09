@@ -1,4 +1,4 @@
-# Clover Web App Team Take-Home Assignment
+<!-- # Clover Web App Team Take-Home Assignment -->
 
 ## RICK AND MORTY PORTAL
 
@@ -51,6 +51,7 @@ Ricky and Morty Portal was built using the following:
 - [Prettier](https://prettier.io/)
 - [Rick and Morty API](https://rickandmortyapi.com/documentation)
 
+<!--
 ## QUESTIONS
 
 **What architectural decisions did you make and why? Elaborate on strengths and weaknesses.**
@@ -82,3 +83,4 @@ I opted not to use any third-party libraries for this project, though I had brie
 **If you had more time, what would you have done differently?**
 
 With additional time, I would have built out more testing, and spent more time refactoring my code for easier future readability. It would have also been fun to create additional portals that would fetch either location and/or episode information, rather than just the characters. With even more time, full API searches would also be fun to add. More bug testing would also be needed to ensure a more seamless application flow.
+-->
