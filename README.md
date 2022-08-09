@@ -20,8 +20,8 @@ Required software for setting up this application:
 
 1. Clone the repo.
    ```sh
-   git clone https://github.com/michaeltraps/clover_takehome.git
-   cd clover_takehome
+   git clone https://github.com/michaeltraps/rick_and_morty.git
+   cd rick_and_morty
    ```
 2. Install the package dependencies.
    ```sh
